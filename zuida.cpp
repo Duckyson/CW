@@ -8,7 +8,7 @@ int main(){
 	printf("max is:%d\n",result);
 	return 0;
 }
-int max(int a,int b)//导出最大值 
+int max(int a,int b)//碌录鲁枚脳卯麓贸脰碌 
 {
 	int result;
 	if(a>b)
