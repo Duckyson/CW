@@ -1,4 +1,4 @@
-//求多组数据中的最大值 
+//脟贸露脿脳茅脢媒戮脻脰脨碌脛脳卯麓贸脰碌 
 #include<stdio.h>
 int main()
 {
