@@ -1,4 +1,4 @@
-//a的b次方 
+//a碌脛b麓脦路陆 
  #include<cmath>
  #include<iostream>
  using namespace std;
