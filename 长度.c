@@ -1,4 +1,4 @@
-//计算输入消息长度 
+//录脝脣茫脢盲脠毛脧没脧垄鲁陇露脠 
 #include<stdio.h>
 int main()
 {
