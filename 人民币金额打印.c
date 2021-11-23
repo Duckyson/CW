@@ -1,16 +1,16 @@
 #include<stdio.h>
 #include<string.h>
 void inter(char ch){
-	if(ch=='0')  printf("��");
-	else if(ch=='1')  printf("Ҽ");
-	else if(ch=='2')  printf("��");
-	else if(ch=='3')  printf("��");
-	else if(ch=='4')  printf("��");
-	else if(ch=='5')  printf("��");
-	else if(ch=='6')  printf("½");
-	else if(ch=='7')  printf("��");
-	else if(ch=='8')  printf("��");
-	else if(ch=='9')  printf("��");
+	if(ch=='0')  printf("Áã");
+	else if(ch=='1')  printf("Ò¼");
+	else if(ch=='2')  printf("·¡");
+	else if(ch=='3')  printf("Èþ");
+	else if(ch=='4')  printf("ËÁ");
+	else if(ch=='5')  printf("Îé");
+	else if(ch=='6')  printf("Â½");
+	else if(ch=='7')  printf("Æâ");
+	else if(ch=='8')  printf("°Æ");
+	else if(ch=='9')  printf("¾Á");
 	else return; 
 }
 int main(){
@@ -28,230 +28,230 @@ int main(){
 	for(i=0;i<m;i++){
 		l=0;
 		if(a[i][0]=='-')  {
-		printf("��");
+		printf("¸º");
 		l+=1;}
 		switch(b[i]){
 			case 1:{
 				inter(a[i][l]);
-				printf("Բ\n"); 
+				printf("Ô²\n"); 
 				break;
 			}
 			case 2:{
 				inter(a[i][l]);
-				printf("ʰ");
+				printf("Ê°");
 				if(a[i][l+1]!='0'){
 					inter(a[i][l+1]);
 				}
-				printf("Բ\n"); 
+				printf("Ô²\n"); 
 				break;	
 			}
 			case 3:{
 				inter(a[i][l]);
-				printf("��");
+				printf("°Û");
 				if(a[i][l+1]=='0'&&a[i][l+2]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				inter(a[i][l+1]);
 				if(a[i][l+1]!='0'){
-					printf("ʰ"); 
+					printf("Ê°"); 
 				}
 				if(a[i][l+2]!='0'){
 					inter(a[i][l+2]);
 				}
-				printf("Բ\n");
+				printf("Ô²\n");
 				break;
 			}
 			case 4:{
 				inter(a[i][l]);
-				printf("Ǫ");
+				printf("Çª");
 				if(a[i][l+1]=='0'&&a[i][l+2]=='0'&&a[i][l+3]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				inter(a[i][l+1]);
 				if(a[i][l+1]!='0'){
-					printf("��");
+					printf("°Û");
 				}
 				if(a[i][l+2]=='0'&&a[i][l+3]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				if(a[i][l+1]=='0'&&a[i][l+2]=='0'){goto e2;}
 				inter(a[i][l+2]);
 e2:				if(a[i][l+2]!='0'){
-					printf("ʰ"); 
+					printf("Ê°"); 
 				}
 				if(a[i][l+3]!='0'){
 					inter(a[i][l+3]);
 				}
-				printf("Բ\n");
+				printf("Ô²\n");
 				break;
 			}
 			case 5:{
 				inter(a[i][l]);
-				printf("��");
+				printf("Íò");
 				if(a[i][l+1]=='0'&&a[i][l+2]=='0'&&a[i][l+3]=='0'&&a[i][l+4]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				inter(a[i][l+1]);
 				if(a[i][l+1]!='0'){
-					printf("Ǫ");
+					printf("Çª");
 				}
 				if(a[i][l+2]=='0'&&a[i][l+3]=='0'&&a[i][l+4]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				if(a[i][l+1]=='0'&&a[i][l+2]=='0'){goto d1;}
 				inter(a[i][l+2]);
 d1:				if(a[i][l+2]!='0'){
-					printf("��"); 
+					printf("°Û"); 
 				}
 				if(a[i][l+3]=='0'&&a[i][l+4]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				if(a[i][l+1]=='0'&&a[i][l+2]=='0'){goto d2;}
 				inter(a[i][l+3]);
 d2:				if(a[i][l+3]!='0'){
-					printf("ʰ"); 
+					printf("Ê°"); 
 				}
 				if(a[i][l+4]!='0'){
 					inter(a[i][l+4]);
 				}
-				printf("Բ\n");
+				printf("Ô²\n");
 				break;
 			}
 			case 6:{
 				inter(a[i][l]);
-				printf("ʰ");
+				printf("Ê°");
 				if(a[i][l+1]!='0'){
 					inter(a[i][l+1]);
 				}
-				printf("��");
+				printf("Íò");
 				if(a[i][l+2]=='0'&&a[i][l+3]=='0'&&a[i][l+4]=='0'&&a[i][l+5]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				inter(a[i][l+2]);
 				if(a[i][l+2]!='0'){
-					printf("Ǫ");
+					printf("Çª");
 				}
 				if(a[i][l+3]=='0'&&a[i][l+4]=='0'&&a[i][l+5]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				if(a[i][l+2]=='0'&&a[i][l+3]=='0'){goto a1;}
 				inter(a[i][l+3]);
 a1:				if(a[i][l+3]!='0'){
-					printf("��");
+					printf("°Û");
 				}if(a[i][l+4]=='0'&&a[i][l+5]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				if(a[i][l+3]=='0'&&a[i][l+4]=='0'){goto a2;}
 				inter(a[i][l+4]);
 a2:				if(a[i][l+4]!='0'){
-					printf("ʰ"); 
+					printf("Ê°"); 
 				}
 				if(a[i][l+5]!='0'){
 					inter(a[i][l+5]);
 				}
-				printf("Բ\n");
+				printf("Ô²\n");
 				break;
 			}
 			case 7:{
 				inter(a[i][l]);
-				printf("��");
+				printf("°Û");
 				if(a[i][l+1]=='0'&&a[i][l+2]=='0'&&a[i][l+3]=='0'&&a[i][l+4]=='0'&&a[i][l+5]=='0'&&a[i][l+6]=='0'){
-					printf("��Բ\n");break; 
+					printf("ÍòÔ²\n");break; 
 				}
 				if(a[i][l+1]=='0'&&a[i][l+2]=='0'){
-					printf("��"); goto b1;
+					printf("Íò"); goto b1;
 				}
 				inter(a[i][l+1]);
 				if(a[i][l+1]!='0'){
-					printf("ʰ"); 
+					printf("Ê°"); 
 				}
 				if(a[i][l+2]!='0'){
 					inter(a[i][l+2]);
 				}
-				printf("��");
+				printf("Íò");
 b1:				if(a[i][l+3]=='0'&&a[i][l+4]=='0'&&a[i][l+5]=='0'&&a[i][l+6]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				inter(a[i][l+3]);
 				if(a[i][l+3]!='0'){
-					printf("Ǫ");
+					printf("Çª");
 		     	}
 		     	if(a[i][l+4]=='0'&&a[i][l+5]=='0'&&a[i][l+6]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				if(a[i][l+3]=='0'&&a[i][l+4]=='0'){goto b3;}
 				inter(a[i][l+4]);
 b3:				if(a[i][l+4]!='0'){
-					printf("��");
+					printf("°Û");
 				}
 				if(a[i][l+5]=='0'&&a[i][l+6]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				if(a[i][l+4]=='0'&&a[i][l+5]=='0'){goto b2;}
 				inter(a[i][l+5]);
 b2:				if(a[i][l+5]!='0'){
-					printf("ʰ"); 
+					printf("Ê°"); 
 				}
 				if(a[i][l+6]!='0'){
 					inter(a[i][l+6]);
 				}
-				printf("Բ\n");
+				printf("Ô²\n");
 				break;
 			}
 			case 8:{
 				inter(a[i][l]);
-				printf("Ǫ");
+				printf("Çª");
 				if(a[i][l+1]=='0'&&a[i][l+2]=='0'&&a[i][l+3]=='0'&&a[i][l+4]=='0'&&a[i][l+5]=='0'&&a[i][l+6]=='0'&&a[i][l+7]=='0'){
-					printf("��Բ\n");break; 
+					printf("ÍòÔ²\n");break; 
 				}
 				if(a[i][l+1]=='0'&&a[i][l+2]=='0'&&a[i][l+3]=='0'){
-					printf("��");goto c1; 
+					printf("Íò");goto c1; 
 				}
 				inter(a[i][l+1]);
 				if(a[i][l+1]!='0'){
-					printf("��"); 
+					printf("°Û"); 
 				}
 				if(a[i][l+2]=='0'&&a[i][l+3]=='0'&&a[i][l+4]=='0'&&a[i][l+5]=='0'&&a[i][l+6]=='0'&&a[i][l+7]=='0'){
-					printf("��Բ\n");break; 
+					printf("ÍòÔ²\n");break; 
 				}
 				if(a[i][l+2]=='0'&&a[i][l+3]=='0'){
-					printf("��"); goto c1;
+					printf("Íò"); goto c1;
 				}
 				if(a[i][l+1]=='0'&&a[i][l+2]=='0'){goto c3;}
 				inter(a[i][l+2]);
 c3:				if(a[i][l+2]!='0'){
-					printf("ʰ"); 
+					printf("Ê°"); 
 				}
 				if(a[i][l+3]!='0'){
 					inter(a[i][l+3]);
 				}
-				printf("��");
+				printf("Íò");
 c1:				if(a[i][l+4]=='0'&&a[i][l+5]=='0'&&a[i][l+6]=='0'&&a[i][l+7]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				inter(a[i][l+4]);
 				if(a[i][l+4]!='0'){
-					printf("Ǫ");
+					printf("Çª");
 		     	}
 		     	if(a[i][l+5]=='0'&&a[i][l+6]=='0'&&a[i][l+7]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}if(a[i][l+4]=='0'&&a[i][l+5]=='0'){goto c2;}
 				inter(a[i][l+5]);
 c2:				if(a[i][l+5]!='0'){
-					printf("��");
+					printf("°Û");
 				}
 				if(a[i][l+6]=='0'&&a[i][l+7]=='0'){
-					printf("Բ\n");break; 
+					printf("Ô²\n");break; 
 				}
 				if(a[i][l+5]=='0'&&a[i][l+6]=='0'){goto c4;}
 				inter(a[i][l+6]);
 c4:				if(a[i][l+6]!='0'){
-					printf("ʰ"); 
+					printf("Ê°"); 
 				}
 				if(a[i][l+7]!='0'){
 					inter(a[i][l+7]);
 				}
-				printf("Բ\n");
+				printf("Ô²\n");
 				break;
 			} 
 		}
