@@ -14,6 +14,6 @@ int main(){
     gets(str1);
     gets(str2);
     str = strlong(str1 , str2);
-    printf("long string%s",str);
+    printf("long string is:%s",str);
     return 0;
 }
