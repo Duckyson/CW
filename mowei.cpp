@@ -13,11 +13,12 @@ int main(){
 				for(k=l;k<m-1;k++){
 					a[k]=a[1+k];
 				}
-				a[m-1]=0;
+				a[m-1]=-1;l--; 
 			}
 		}
 		for(l=0;l<m;l++){
-			printf("%d",a[l]);
+			if(a[l]==-1) a[l]=0;
+			printf("%d ",a[l]);
 		}
 	}
 	return 0;

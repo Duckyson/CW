@@ -1,13 +1,21 @@
 #include<stdio.h>
 int main (){
-	int n,i,l;
+	int n,i,l,k,m=0;
 	scanf("%d",&n);
-	int a[n][100];
+	int a[5][5];
 	for(i=0;i<n;i++){
-		for(l=0;l<25;l++){
-			scanf("%d",&a[i][l]);
+		for(l=0;l<5;l++){
+			for(k=0;k<5;k++){
+				scanf("%d",&a[l][k]);
+			}
 		}
-		printf("%d",a[i][0]+a[i][4]+a[i][6]+a[i][8]+a[i][12]+a[i][16]+a[i][18]+a[i][20]+a[i][24]);
+		for(l=0,k=0;l<5;l++,k++){
+			m+=a[l][k];
+		}
+		for(l=0,k=4;k>=0;l++,k--){
+			m+=a[l][k];
+		}
+		printf("%d",m-a[2][2]);
 	}
 	return 0;
 }
